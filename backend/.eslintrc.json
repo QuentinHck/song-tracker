@@ -20,7 +20,23 @@
     "linebreak-style": ["error", "unix"],
     "quotes": ["error", "single"],
     "semi": ["error", "never"],
-    "prettier/prettier": ["error", { "semi": false }]
+    "prettier/prettier": ["error", { "semi": false }],
+    "constructor-super": "error"
   },
+  "globals": {
+    "process": "readonly"
+  },
+  "overrides": [
+    {
+      "files": ["src/**/*.ts"],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "ecmaVersion": 2021,
+        "sourceType": "module"
+      },
+      "plugins": ["@typescript-eslint"],
+      "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"]
+    }
+  ],
   "ignorePatterns": ["node_modules/"]
 }

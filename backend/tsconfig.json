@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "CommonJS",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "src/**/*.ts", // Adjust the path to match your TypeScript source files
+    "globals.d.ts" // Ensure globals.d.ts is included
+  ],
+  "exclude": ["node_modules"]
+}
